@@ -23,6 +23,45 @@ import android.widget.Toast;
 
 import java.io.InputStream;
 
+
+//public class MainActivity extends AppCompatActivity {
+//    private final int CAMERA_REQ_CODE = 100;
+//    ImageView imgCamera;
+//
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//
+//        imgCamera = findViewById(R.id.imgCamera);
+//        Button btnCamera = findViewById(R.id.btnCamera);
+//
+//        btnCamera.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent iCamera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                startActivityForResult(iCamera, CAMERA_REQ_CODE);
+//            }
+//        });
+//    }
+//
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//
+//        if (resultCode == RESULT_OK) {
+//            if (requestCode == CAMERA_REQ_CODE) {
+//                //for camera
+//                Bitmap img = (Bitmap) (data.getExtras().get("data"));
+//                imgCamera.setImageBitmap(img);
+//
+//            }
+//        }
+//    }
+//
+//}
+
+
 public class MainActivity extends AppCompatActivity
 {
     private static final int REQUEST_CODE_STORAGE_PERMISSION = 1;
